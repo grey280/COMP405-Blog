@@ -5,7 +5,7 @@
 	<div class="row">
 		<h2><%= article.title %></h2>
 		<div class="col-md-10">
-			<%= article.text %>
+			<%= article.text.first(80) %>
 		</div>
 		<div class="col-md-2">
 			<div class="list-group">
