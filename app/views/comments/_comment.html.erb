@@ -1,10 +1,12 @@
 <div class="panel panel-default">
 	<div class="panel-heading"><%= comment.commenter %></div>
 	<div class="panel-body"><%= comment.body %></div>
+	<% if user_signed_in? %>
 	<div class="panel-footer">
 		<%= link_to 'Destroy Comment', [comment.article, comment],
 										method: :delete,
 										data: {confirm: 'Are you sure?' },
 										class: "btn btn-danger" %>
-		</div>
+	</div>
+	<% end %>
 </div>
