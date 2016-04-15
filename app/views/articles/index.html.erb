@@ -5,7 +5,7 @@
 	<div class="row">
 		<h2><%= article.title %></h2>
 		<div class="col-md-10">
-			<%= article.text.first(80) %>
+			<%= article.text.length > 100 ? article.text.first(100)+"..." : article.text %>
 		</div>
 		<div class="col-md-2">
 			<div class="list-group">
